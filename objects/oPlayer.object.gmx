@@ -30,7 +30,7 @@ v_speed = 0;
 j_speed = 18;
 grav = 0.8;
 walk_speed = 5;
-//depth = -200;
+depth = -100;
 </string>
           </argument>
         </arguments>

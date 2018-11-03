@@ -81,6 +81,7 @@
     </objects>
     <object>objects\oPlayer</object>
     <object>objects\oWall</object>
+    <object>objects\oPlayerHead</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

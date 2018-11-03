@@ -104,6 +104,7 @@
     <instance objName="oWall" x="480" y="416" name="inst_813EC7A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall" x="3072" y="704" name="inst_38C97D14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlayer" x="96" y="576" name="inst_E1A0B1A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayerHead" x="32" y="512" name="inst_89026C82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TileSet1" x="352" y="416" w="128" h="128" xo="0" yo="0" id="10000003" name="inst_06FE47BE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
