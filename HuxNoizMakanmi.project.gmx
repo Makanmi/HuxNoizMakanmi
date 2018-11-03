@@ -79,9 +79,16 @@
         <object>objects\oGrassRight</object>
       </objects>
     </objects>
-    <object>objects\oPlayer</object>
     <object>objects\oWall</object>
-    <object>objects\oPlayerHead</object>
+    <objects name="PlayerObjects">
+      <objects name="PlayerBody">
+        <object>objects\oPlayer</object>
+        <object>objects\oPlayerHead</object>
+      </objects>
+      <objects name="Tongue">
+        <object>objects\oTongueTip</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
