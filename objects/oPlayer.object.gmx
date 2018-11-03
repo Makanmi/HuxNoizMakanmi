@@ -30,6 +30,7 @@ v_speed = 0;
 j_speed = 18;
 grav = 0.8;
 walk_speed = 5;
+//depth = -200;
 </string>
           </argument>
         </arguments>
@@ -117,12 +118,12 @@ if(!grounded)
 {
     if(sign(v_speed) &gt; 0)
     {
-        sprite_index = sPlayerFall;
+        sprite_index = sFallBody;
         image_index = 0;
     }
     else
     {
-        sprite_index = sPlayerJump;
+        sprite_index = sJumpBody;
         image_speed = 0.25;
         
     }
@@ -138,7 +139,7 @@ else
     else
     {
         
-        sprite_index = sPlayerRight;
+        sprite_index = sWalkBody;
         image_speed = 0.17;
     }
 }

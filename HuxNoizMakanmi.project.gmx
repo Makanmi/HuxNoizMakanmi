@@ -24,6 +24,11 @@
         <sprite>sprites\sJumpBody</sprite>
         <sprite>sprites\sJumpHead</sprite>
       </sprites>
+      <sprites name="Abilities">
+        <sprites name="Tongue">
+          <sprite>sprites\TongueTip</sprite>
+        </sprites>
+      </sprites>
     </sprites>
     <sprites name="TestSprites">
       <sprite>sprites\SOLID</sprite>
