@@ -72,6 +72,7 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
+    <object>objects\oGame</object>
     <objects name="Level1">
       <objects name="Grass">
         <object>objects\oGrassCenter</object>
