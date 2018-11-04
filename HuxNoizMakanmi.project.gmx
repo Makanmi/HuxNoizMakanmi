@@ -34,6 +34,14 @@
       <sprite>sprites\SOLID</sprite>
     </sprites>
     <sprites name="Level1">
+      <sprites name="Platforms">
+        <sprite>sprites\Wall_left</sprite>
+        <sprite>sprites\Wall_right</sprite>
+        <sprite>sprites\Wall</sprite>
+        <sprite>sprites\WallEnclCenter</sprite>
+        <sprite>sprites\WallEnclLeft</sprite>
+        <sprite>sprites\WallEnclRight</sprite>
+      </sprites>
       <sprites name="Grass">
         <sprite>sprites\Grass</sprite>
         <sprite>sprites\GrassLeft</sprite>
