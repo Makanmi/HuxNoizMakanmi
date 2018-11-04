@@ -61,7 +61,7 @@ key_jump = keyboard_check(vk_space);
 
 var grounded = place_meeting(x,y+1, oWall);
 
-//Timer for animation
+//Timer for animation [ unfinished ]
 anticipation = 0;
 
 // - PLAYER MOVEMENT -    //
@@ -105,7 +105,7 @@ if (place_meeting(x,y+v_speed,oWall))
 
 y = y + v_speed;
 
-// - PLAYER LASH - //
+// - PLAYER LASH - [ unfinished ] //
 
 //The end of the tongue is a bullet 
 //If bullet collides with environment, it sticks
