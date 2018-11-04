@@ -35,13 +35,13 @@
     <background visible="-1" foreground="0" name="cloud1" x="0" y="0" htiled="-1" vtiled="-1" hspeed="-3" vspeed="0" stretch="0"/>
     <background visible="-1" foreground="0" name="cloud2" x="0" y="0" htiled="-1" vtiled="-1" hspeed="-2" vspeed="0" stretch="0"/>
     <background visible="-1" foreground="0" name="cloud3" x="0" y="0" htiled="-1" vtiled="-1" hspeed="-1" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="-1" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="-8" vspeed="10" stretch="0"/>
+    <background visible="-1" foreground="-1" name="Rain" x="0" y="0" htiled="-1" vtiled="-1" hspeed="-8" vspeed="10" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="oPlayer" xview="0" yview="0" wview="1280" hview="720" xport="0" yport="0" wport="1280" hport="720" hborder="686" vborder="686" hspeed="686" vspeed="686"/>
+    <view visible="-1" objName="oPlayer" xview="0" yview="0" wview="1366" hview="720" xport="0" yport="0" wport="1366" hport="720" hborder="686" vborder="686" hspeed="686" vspeed="686"/>
     <view visible="0" objName="oPlayer" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -51,6 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
+    <instance objName="oPlayer" x="96" y="96" name="inst_53A7A376" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oGrassCenter" x="288" y="480" name="inst_CC46F22E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oGrassCenter" x="416" y="352" name="inst_A62EF708" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oGrassCenter" x="480" y="352" name="inst_506422A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -103,13 +104,6 @@
     <instance objName="oWall" x="480" y="416" name="inst_DCC21B17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall" x="480" y="416" name="inst_813EC7A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall" x="3072" y="704" name="inst_38C97D14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayer" x="96" y="576" name="inst_E1A0B1A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall" x="0" y="0" name="inst_C42E0846" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall" x="128" y="0" name="inst_E6AC4054" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall" x="256" y="0" name="inst_6CBAAF41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall" x="384" y="0" name="inst_537FDE49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall" x="512" y="0" name="inst_74D2F097" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oGame" x="32" y="160" name="inst_2466242E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TileSet1" x="352" y="416" w="128" h="128" xo="0" yo="0" id="10000003" name="inst_06FE47BE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -162,11 +156,6 @@
     <tile bgName="TileSet1" x="2816" y="704" w="128" h="128" xo="128" yo="128" id="10000073" name="inst_6D9506F3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet1" x="2944" y="704" w="128" h="128" xo="128" yo="128" id="10000074" name="inst_A9B0F2B3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet1" x="3072" y="704" w="128" h="128" xo="128" yo="0" id="10000075" name="inst_D5C137DE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet1" x="512" y="0" w="128" h="128" xo="256" yo="128" id="10000082" name="inst_29187D18" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet1" x="128" y="0" w="128" h="128" xo="128" yo="128" id="10000089" name="inst_082DA94A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet1" x="256" y="0" w="128" h="128" xo="128" yo="128" id="10000090" name="inst_3407796B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet1" x="384" y="0" w="128" h="128" xo="128" yo="128" id="10000091" name="inst_047E0AB9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet1" x="0" y="0" w="128" h="128" xo="0" yo="128" id="10000092" name="inst_D61C345E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
