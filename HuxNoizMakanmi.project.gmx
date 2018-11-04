@@ -9,7 +9,7 @@
     <sprites name="Player">
       <sprite>sprites\PlayerCollision</sprite>
       <sprites name="Idle">
-        <sprite>sprites\sprite15</sprite>
+        <sprite>sprites\sPlayerHead</sprite>
         <sprite>sprites\sPlayerBody</sprite>
       </sprites>
       <sprites name="PlayerWalk">
@@ -47,11 +47,44 @@
   <backgrounds name="background">
     <backgrounds name="Skies">
       <background>background\background0</background>
+      <backgrounds name="Scrollables">
+        <background>background\cloud1</background>
+        <background>background\cloud2</background>
+        <background>background\cloud3</background>
+      </backgrounds>
+    </backgrounds>
+    <backgrounds name="Weather">
+      <background>background\Rain</background>
+    </backgrounds>
+    <backgrounds name="Tiles">
+      <backgrounds name="Outside">
+        <background>background\TileSet1</background>
+      </backgrounds>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
-  <objects name="objects"/>
-  <rooms name="rooms"/>
+  <objects name="objects">
+    <objects name="Level1">
+      <objects name="Grass">
+        <object>objects\oGrassCenter</object>
+        <object>objects\oGrassLeft</object>
+        <object>objects\oGrassRight</object>
+      </objects>
+    </objects>
+    <object>objects\oWall</object>
+    <objects name="PlayerObjects">
+      <objects name="PlayerBody">
+        <object>objects\oPlayer</object>
+        <object>objects\oPlayerHead</object>
+      </objects>
+      <objects name="Tongue">
+        <object>objects\oTongueTip</object>
+      </objects>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
