@@ -7,30 +7,14 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Player">
+      <sprite>sprites\sPlayerFall</sprite>
+      <sprite>sprites\sPlayerJump</sprite>
+      <sprite>sprites\sPlayerRight</sprite>
+      <sprite>sprites\sPlayer</sprite>
       <sprite>sprites\PlayerCollision</sprite>
-      <sprites name="Idle">
-        <sprite>sprites\sPlayerHead</sprite>
-        <sprite>sprites\sPlayerBody</sprite>
-      </sprites>
-      <sprites name="PlayerWalk">
-        <sprite>sprites\sWalkBody</sprite>
-        <sprite>sprites\sWalkHead</sprite>
-      </sprites>
-      <sprites name="PlayerFall">
-        <sprite>sprites\sFallBody</sprite>
-        <sprite>sprites\sFallHead</sprite>
-      </sprites>
-      <sprites name="PlayerJump">
-        <sprite>sprites\sJumpBody</sprite>
-        <sprite>sprites\sJumpHead</sprite>
-      </sprites>
-      <sprites name="Abilities">
-        <sprites name="Tongue">
-          <sprite>sprites\TongueTip</sprite>
-        </sprites>
-      </sprites>
     </sprites>
     <sprites name="TestSprites">
+      <sprite>sprites\sprite8</sprite>
       <sprite>sprites\SOLID</sprite>
     </sprites>
     <sprites name="Level1">
@@ -72,22 +56,13 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\oGame</object>
+    <object>objects\oPlayer</object>
+    <object>objects\oWall</object>
     <objects name="Level1">
       <objects name="Grass">
         <object>objects\oGrassCenter</object>
         <object>objects\oGrassLeft</object>
         <object>objects\oGrassRight</object>
-      </objects>
-    </objects>
-    <object>objects\oWall</object>
-    <objects name="PlayerObjects">
-      <objects name="PlayerBody">
-        <object>objects\oPlayer</object>
-        <object>objects\oPlayerHead</object>
-      </objects>
-      <objects name="Tongue">
-        <object>objects\oTongueTip</object>
       </objects>
     </objects>
   </objects>
