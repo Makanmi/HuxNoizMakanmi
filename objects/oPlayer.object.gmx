@@ -32,7 +32,7 @@ grav = 0.8;
 walk_speed = 5;
 depth = -100;
 //added
-head = 0;
+head = noone;
 
 maxDistance= 0;
 //Failsafe for the existence of the head
