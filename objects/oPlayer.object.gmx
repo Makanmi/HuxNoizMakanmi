@@ -32,7 +32,8 @@ grav = 0.8;
 walk_speed = 5;
 depth = -100;
 //added
-head = noone;
+
+tongue = noone;
 
 maxDistance= 0;
 //Failsafe for the existence of the head
@@ -41,7 +42,6 @@ if(instance_exists(oPlayerHead) = false)
     head = instance_create(x,y,oPlayerHead);
 }
 
-tongue = noone;
 
 
 </string>
@@ -120,8 +120,7 @@ y = y + v_speed;
 
 // Lashing
 
-if(instance_exists(head))
-{
+if(instance_exists(head)){
     head.x = x;
     head.y = y;
     
@@ -138,42 +137,34 @@ if(instance_exists(head))
     }
     
     //If mousebutton is pressed: use tongue
-    if(mouse_check_button_pressed(mb_left))
-    {
+    if(mouse_check_button_pressed(mb_left)){
         //Failsafe
-        if(instance_exists(oTongueTip) = false)
-        {
+        if(instance_exists(oTongueTip) = false){
             tongue = instance_create(x,y, oTongueTip);
         }
         
-        if(instance_exists(tongue))
-        {
-            tongue.speed= 30;
+        if(instance_exists(tongue)){
+            tongue.speed = 30;
             tongue.direction = head.image_angle;
             tongue.image_angle = tongue.direction; 
         }
-        
-        if(mouse_check_button_released(mb_left))
-        {
-            if (instance_exists(tongue))
-            {
+    }
+        if(mouse_check_button_released(mb_left)){
+            if (instance_exists(tongue)){
                 instance_destroy(tongue);
             }
         }
-    }
 }
 
-if(instance_exists(tongue))
-{
-    with(tongue)
-    {
-        if(hasCollided = false)
-        {
+if(instance_exists(tongue)){
+    with(tongue){
+        if(hasCollided = false){
             other.maxDistance = point_distance(x,y,other.x, other.y);
         }
-        if(place_meeting(x,y,oWall))
-        {
+        
+        if(place_meeting(x,y,oWall)){
             hasCollided = true;
+            speed = 0;
         }    
     }
     
@@ -187,15 +178,7 @@ if(instance_exists(tongue))
 
 }
 
-if(instance_exists(head) &amp;&amp; instance_exists(tongue))
-{
-    draw_set_color(c_red);
-    draw_line_width(head.x, head.y, tongue.x, tongue.y, 10);
-    draw_circle(tongue.x, tongue.y, maxDistance, true);
-}
-
 // - PLAYER ANIMATION SPRITES - //
-
 if(!grounded)
 {
     if(sign(v_speed) &gt; 0)
@@ -230,6 +213,36 @@ else
 if (h_speed != 0){
     image_xscale = sign(h_speed);
 } 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+
+if(instance_exists(head) &amp;&amp; instance_exists(tongue))
+{
+    draw_set_color(c_red);
+    draw_line_width(head.x, head.y, tongue.x, tongue.y, 10);
+    draw_circle(tongue.x, tongue.y, maxDistance, true);
+}
 </string>
           </argument>
         </arguments>
