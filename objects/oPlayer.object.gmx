@@ -31,7 +31,10 @@ j_speed = 18;
 grav = 0.8;
 walk_speed = 5;
 depth = -100;
-//added
+
+//head is looking left or right 1 = right, -1 = left
+looking_side = 1;
+headOriginX = x;
 
 tongue = noone;
 
@@ -121,19 +124,23 @@ y = y + v_speed;
 // Lashing
 
 if(instance_exists(head)){
-    head.x = x;
-    head.y = y;
+    headOriginX = x;
+    head.x = headOriginX + (4 * looking_side);
+    head.y = y-8;
     
-    head.image_angle = point_direction(head.x, head.y, mouse_x, mouse_y);
+    head.image_angle = point_direction(headOriginX, head.y, mouse_x, mouse_y);
     
     //Flip image based on position
     if (head.image_angle &gt; 90 ) &amp;&amp; (head.image_angle &lt; 270)
     {
         head.image_yscale = -1;
+        looking_side = head.image_yscale;
+        
     }
     else
     {
         head.image_yscale = 1;
+        looking_side = head.image_yscale;
     }
     
     //If mousebutton is pressed: use tongue

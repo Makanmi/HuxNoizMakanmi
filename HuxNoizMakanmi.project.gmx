@@ -43,6 +43,8 @@
         <sprite>sprites\Sky</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\sHeartBug_Wings</sprite>
+    <sprite>sprites\sHeartBug_Body</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Skies">
@@ -82,6 +84,8 @@
       </objects>
     </objects>
     <object>objects\oGame</object>
+    <object>objects\oHeartBug_Body</object>
+    <object>objects\oHeartBug_Wings</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
